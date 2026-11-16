@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asistente Unison</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/chat.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span aria-hidden="true">U</span> Asistente Unison</div>
+    <button id="reset" type="button" hidden>Nuevo chat</button>
+  </header>
+  <main>
+    <section id="welcome">
+      <p class="eyebrow">Universidad de Sonora</p>
+      <h1>¿Qué quieres consultar?</h1>
+      <p>Haz preguntas sobre reglamentos, becas y trámites universitarios.</p>
+      <div id="suggestions">
+        <button type="button">¿Qué requisitos debo cumplir para hacer el servicio social?</button>
+        <button type="button">¿Qué tipos de becas estudiantiles existen?</button>
+        <button type="button">¿Cómo funcionan las prácticas profesionales?</button>
+      </div>
+    </section>
+    <section id="messages" role="log" aria-label="Conversación"></section>
+    <form>
+      <label for="question">Tu pregunta</label>
+      <div class="composer">
+        <textarea id="question" rows="2" maxlength="2000" required placeholder="Escribe tu consulta…"></textarea>
+        <button id="send" type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

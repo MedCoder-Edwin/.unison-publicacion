@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+:root { color: #19283d; background: #f5f7fb; font: 16px Inter, "Segoe UI", sans-serif; }
+body { margin: 0; }
+header { background: #102d56; color: white; min-height: 70px; padding: 12px clamp(18px, 5vw, 70px); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+.brand span { background: #f9ce61; color: #102d56; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; font: bold 24px Georgia, serif; }
+main { width: min(880px, 100% - 32px); margin: auto; min-height: calc(100dvh - 70px); display: flex; flex-direction: column; }
+#welcome { padding: clamp(36px, 10vh, 100px) 0 24px; }
+.eyebrow { color: #315780; font-size: .8rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.06; margin: 12px 0; letter-spacing: -.04em; }
+p, li { line-height: 1.55; }
+#suggestions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 12px; margin-top: 28px; }
+button { font: inherit; cursor: pointer; border: 1px solid #c8d5e6; border-radius: 12px; padding: 10px 15px; background: white; color: #102d56; }
+#suggestions button { text-align: left; min-height: 76px; }
+button:hover:not(:disabled) { border-color: #537cae; }
+button:disabled { opacity: .6; cursor: wait; }
+#messages { display: flex; flex-direction: column; gap: 16px; padding: 24px 0; }
+article { background: white; border-radius: 14px; border: 1px solid #dce4ef; padding: 16px; overflow-wrap: anywhere; }
+article.user { align-self: flex-end; background: #e7effc; max-width: 90%; }
+article p { white-space: pre-wrap; margin: 8px 0 0; }
+details { margin-top: 14px; color: #315780; }
+summary { cursor: pointer; }
+form { position: sticky; bottom: 0; margin-top: auto; padding: 12px 0 20px; background: #f5f7fb; }
+label { display: block; font-weight: 650; margin-bottom: 8px; }
+.composer { display: flex; align-items: flex-end; padding: 8px; gap: 8px; border: 1px solid #c8d5e6; border-radius: 14px; background: white; }
+textarea { width: 100%; min-width: 0; padding: 8px; border: 0; resize: vertical; font: inherit; color: inherit; }
+#send { background: #153c70; color: white; font-weight: 650; }
+:focus-visible { outline: 3px solid #527dbe; outline-offset: 2px; }
